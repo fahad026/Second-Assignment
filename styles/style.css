@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.navbar, .banner{
+
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.margin{
+    margin: 0px 60px;
+}
 .home-color{
     color: rgb(254, 163, 1);
 }
@@ -10,12 +34,8 @@
 .admission-color{
     color: rgb(93, 88, 239);
 }
+/* shared styles */
 /* navbar section */
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 .nav-container{
     /* width:1160px ; */
     margin-left: 80px;
@@ -25,7 +45,7 @@ body, ul, li {
     padding:20px 0px 20px 0;
 }
 .navbar{
-    /* margin-left: 70px; */
+    margin-left: 110px;
     display: flex;
     align-items: center;
 }
@@ -64,4 +84,47 @@ body, ul, li {
     padding: 10px;
     width: 197px;
     height: 50px;
+}
+/* banner section */
+.banner{
+    /* width: 1158px;
+    background-color: aqua; */
+    justify-content: space-between;
+    display: flex;
+    margin: 0 20px 0 195px;
+}
+.banner-container{
+    margin-top: 90px;
+}
+.banner-title{
+    
+    margin-bottom: 20px;
+    font-size: 56px;
+    font-weight: 700;
+}
+.banner-description{
+    margin-bottom: 20px;
+}
+.banner-img{
+    margin-right: 80px;
+    width: 350px;
+    height: 475px;
+}
+.font-color{
+    color: rgb(254, 163, 1);
+}
+.second-font-color{
+    color: skyblue;
+}
+.banner-btn{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    width: 157px;
+    height: 50px;
+}
+/* card section */
+.card{
+    background-image: url(./B11-A2-Kids-School-main/B11-A2-Kids-School-main/assets/bg.png);
 }
