@@ -8,14 +8,17 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    /* text-decoration: none; */
+    /* list-style: none; */
     box-sizing: border-box;
 }
 .navbar, .banner{
 
 }
 /* shared styles */
+.text-deco{
+    list-style: none;
+}
 .display-flex{
     display: flex;
 }
@@ -36,12 +39,14 @@
 }
 /* shared styles */
 /* navbar section */
+
 .nav-container{
     /* width:1160px ; */
     margin-left: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding:20px 0px 20px 0;
 }
 .navbar{
@@ -126,5 +131,112 @@
 }
 /* card section */
 .card{
-    background-image: url(./B11-A2-Kids-School-main/B11-A2-Kids-School-main/assets/bg.png);
+
+    margin-top: 50px;
+    background-image:url(./B11-A2-Kids-School-main/B11-A2-Kids-School-main/assets/bg.png);
+}
+.card-title{
+    margin-left: 60px;
+    font-size: 46px;
+    font-weight: 700;
+    height: 57.5px;
+    padding: 60px 0px 60px 0px;
+    text-align: center;
+}
+.card-section {
+    margin-bottom: 150px;
+    margin-top: 80px;
+    /* padding-top: 50px; */
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.box {
+    margin-left: 70px;
+    width: 367.8px;
+    height: 436.78px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+}
+.box-logo {
+    width: 100px;
+    margin-bottom: 15px;
+}
+.box-title {
+    
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.box-description {
+    padding-top: 30px;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.learn-more {
+    padding: 10px 20px;
+    /* background-color: #fdfdfd; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} 
+.read-one{
+    color:rgb(255, 43, 5);
+}
+.read-two{
+    color: rgb(58, 7, 29);
+}
+.read-three{
+    color: rgb(41, 34, 5);
+}
+.gradient-one {  
+    background: linear-gradient(to top, #d1beb900, #fc761073);
+}
+.gradient-two  {
+    background: linear-gradient(to bottom, #9c57e68b, #2574fc00);
+}
+  
+.gradient-three{
+    background: linear-gradient(to bottom, #ff6547, #dd247700);
+}
+/* arrow */
+.arrow-container{
+    margin-top: 20px;
+    position: absolute;
+    margin-left:  1100px;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.arrow-container li{
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    margin: 0 10px;
+    border-radius: 50%; 
+}
+.arrow-container li span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid white;
+}
+.arrow-container li.next span{
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none;
+}
+.arrow-container li.prev span{
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%) rotate(-45deg);
+    border-right: none;
+    border-bottom: none;
+}
+@media screen and (max-width: 576px) {
+    
 }
